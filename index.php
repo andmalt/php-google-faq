@@ -77,21 +77,62 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<?php
-    /* var_dump($asks); */
-    foreach($asks as $ask){
-?>
     <main>
-        <h2>  <?php echo $ask["ask1"]; ?> </h2>
+    
+        <div class="sections">
+            <?php
+            /* var_dump($asks); */
+                foreach($asks as $ask){
+            ?>
+            <h2><?php echo $ask["ask1"]; ?></h2>
+            <p><?php echo $ask["answer1p1"]; ?></p>
+            <p><?php echo $ask["answer1p2"]; ?></p>
+            <p><?php echo $ask["answer1p3"]; ?></p>
+            <p><?php echo $ask["answer1p4"]; ?></p>
+            <p><?php echo $ask["answer1p5"]; ?></p>
+            <?php
+                } 
+            ?>
+        </div>
+        <div class="sections">
+            <?php
+                /* var_dump($asks); */
+                foreach($asks as $ask){
+            ?>
+            <h2><?php echo $ask["ask2"]; ?></h2>
+            <p><?php echo $ask["answer2p1"]; ?></p>
+            <p><?php echo $ask["answer2p2"]; ?></p>
+            <p><?php echo $ask["answer2p3"]; ?></p>
+            <p><?php echo $ask["answer2p4"]; ?></p>
+            <?php
+                } 
+            ?>
+        </div>
+        <div class="sections">
+            <?php
+                /* var_dump($asks); */
+                foreach($asks as $ask){
+            ?>
+            <h2><?php echo $ask["ask3"]; ?></h2>
+            <p><?php echo $ask["answer3p1"]; ?></p>
+            <?php
+                } 
+            ?>
+        </div>
 
-
-
+        <div class="sections">
+            <?php
+                /* var_dump($asks); */
+                foreach($asks as $ask){
+            ?>
+            <h2><?php echo $ask["ask4"]; ?></h2>
+            <p><?php echo $ask["answer4p1"]; ?></p>
+            <?php
+                } 
+            ?>
+        </div>
 
     </main>
-
-<?php
-    } 
-?>
 </body>
 </html>
 

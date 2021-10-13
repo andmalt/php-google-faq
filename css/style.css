@@ -6,3 +6,10 @@
 main{
     padding: 50px 150px;
 }
+h2,
+p{
+    margin: 15px 0;
+}
+.sections{
+    padding: 15px 0;
+}
