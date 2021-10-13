@@ -77,12 +77,21 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
-
 <?php
     /* var_dump($asks); */
+    foreach($asks as $ask){
 ?>
+    <main>
+        <h2>  <?php echo $ask["ask1"]; ?> </h2>
 
+
+
+
+    </main>
+
+<?php
+    } 
+?>
 </body>
 </html>
 
